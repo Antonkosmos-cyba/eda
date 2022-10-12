@@ -1,0 +1,43 @@
+// Внутри этого файла подключайте все созданные SASS файлы. Именно этот файл и будет преобразован в css.
+@font-face {
+  font-family: "Caveat-Regular";
+  src: url("./fonts/caveat/Caveat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Caveat-Bold";
+  src: local("Caveat-Bold"), url("./fonts/caveat/Caveat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Caveat-Medium";
+  src: url("./fonts/caveat/Caveat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("./fonts/roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("./fonts/roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("./fonts/roboto/Roboto-Medium.ttf") format("truetype");
+}
+
+@import "variables";
+@import "atomic";
+@import "colors";
+@import "general";
+
+@import "Header";
+@import "btn";
+@import "menu";
+@import "main";
+@import "footer";
+@import "page";
+@import "slider"

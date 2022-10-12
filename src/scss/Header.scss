@@ -1,0 +1,41 @@
+header{
+    margin: 20px;
+    padding-right: 20px;
+    width: 100%;
+
+.logo {
+    height: 80px;
+    width: 80px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    
+    & img {
+        height: 100%;
+        width: 100%;
+        // border: 1px solid $color-primary-4;
+        border-radius: 50%;
+    }
+    @media (max-width: 426px) {
+            width: 60px;
+            height: 60px;
+    }
+}
+
+ul {
+    padding-right: 20px;
+    font-family: "Caveat-Medium";
+    font-size: 1.5em;
+    line-height: 2.5;
+    flex-wrap: nowrap;
+    position: relative;
+    z-index: 999;
+    li{
+        // width: 180px;
+        // height: 60px;
+        flex-shrink: 1;
+        // text-align: center;
+        // align-content: center;
+    }
+}
+
+}

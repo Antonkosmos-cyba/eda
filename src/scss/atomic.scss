@@ -1,0 +1,63 @@
+// типовые величины и основные константы (отступы, выравнивания и т.д.)
+
+.t-align-center {
+  text-align: center;
+}
+
+.t-align-start {
+  text-align: start;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+// .color-white {
+//   color: $white;
+// }
+
+// .bg-black {
+//   background-color: $black;
+// }
+
+.d-flex {
+  display: flex;
+  
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.jc-start {
+  justify-content: flex-start;
+}
+.jc-end {
+  justify-content: flex-end;
+}
+.jc-round {
+  justify-content: space-around;
+}
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-65 {
+  margin-top: 65px;
+}

@@ -1,0 +1,115 @@
+// миксин для установки шрифтов H1-H4 descktop & mobil
+
+@mixin set-header($font-size, $line-height, $font-weight) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  font-style: normal;
+  line-height: $line-height;
+  //? Учесть обязательно uppercase & capitalize
+}
+
+@mixin h1 {
+  @include set-header(60px, 90px, bold);
+  text-transform: uppercase;
+}
+
+@mixin h1-mob {
+  @include set-header(30px, 45px, bold);
+  text-transform: uppercase;
+}
+
+@mixin h2 {
+  @include set-header(38px, 57px, bold);
+  text-transform: uppercase;width: 100%;
+}
+
+@mixin h2-mob {
+  @include set-header(18px, 27px, bold);
+  text-transform: uppercase;
+}
+
+@mixin h3 {
+  @include set-header(24px, 45px, normal);
+}
+
+@mixin h3-mob {
+  @include set-header(16px, 24px, bold);
+  text-transform: uppercase;
+}
+
+// миксин для рядового текста
+
+@mixin set-text($font-size, $line-height) {
+  font-weight: normal;
+  font-size: $font-size;
+  font-style: normal;
+  line-height: $line-height;
+}
+
+@mixin menu-font {
+  @include set-text(10px, 16px);
+  text-transform: uppercase;
+}
+
+@mixin menu-font-mob {
+  @include set-text(11px, 13px);
+  text-transform: uppercase;
+}
+
+@mixin main-input {
+  @include set-text(14px, 16px);
+}
+
+@mixin main-btn {
+  @include set-text(13.3px, 15px);
+  text-transform: uppercase;
+}
+
+@mixin text-size-1 {
+  @include set-text(16px, 24px);
+}
+
+@mixin text-size-3 {
+  @include set-text(32px, 48px);
+}
+
+@mixin card-price {
+  @include set-text(64px, 64px);
+}
+
+@mixin small-text {
+  @include set-text(12.8px, 19.2px);
+}
+
+@mixin small-text-upp {
+  @include set-text(12.8px, 19.2px);
+  text-transform: uppercase;
+}
+
+// background, media, gradient
+
+@mixin bg-image($image) {
+  background-image: url("./images/#{$image}");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  // background-repeat: no-repeat;
+}
+
+@mixin set-media($level) {
+  @media (max-width: ($level)) {
+    @content;
+  }
+}
+
+@mixin col-gradient($color-1, $color-2) {
+  background: linear-gradient(265.08deg, $color-1 14.9%, $color-2 68.95%);
+}
+
+@mixin bg-footer {
+  @include col-gradient($red, $purple);
+}
+
+@mixin bg-color ($color) {
+  background-color: $color;
+}

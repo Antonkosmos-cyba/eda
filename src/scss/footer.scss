@@ -1,0 +1,71 @@
+.foto-fut {
+    max-width: 80px;
+    // height: 100px;
+    margin-right: 10px;
+    border: 6px $color-primary-3 inset;
+    @media (max-width: 325px) {
+        display: none;
+    }
+}
+
+.icon {
+
+& img{
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+
+    // @media (max-width: 426px) {
+    //     margin-left: 0px;
+    //     margin-right: 10px;
+    // }
+}
+}
+
+.fut {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    height: 120px;
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    @media(max-width: 768px) {
+        background-color: rgba(255, 255, 255, 0); 
+    }
+}
+
+.heig{
+    height: 100px;
+    flex-wrap: nowrap;
+} 
+
+.box {
+    align-items: center;
+    font-size: 1.5em;
+    // width: fit-content;
+    
+
+@media (max-width: 1150px) {
+	.icon-title{
+        display: none; 
+    }
+}
+}
+
+.anton {
+    line-height: 100px;
+    padding-right: 20px;
+    width: min-content;
+    flex-grow: 1;
+    flex-shrink: 0;
+    text-align: end;
+   
+    & p {
+        font-size: 1em;
+    }
+    @media(max-width: 426px){
+        // padding: auto 10px;
+        p {
+            display: none;
+        }
+    }
+}
